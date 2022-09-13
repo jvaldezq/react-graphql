@@ -1,0 +1,27 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-primary: #424B54;
+$color-secondary: #C5BAAF;
+$color-error: rgb(211, 47, 47);
+$color-success: rgb(46, 125, 50);
+$color-warning: rgb(237, 108, 2);
+
+
+
+@mixin phone {
+    @media only screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
